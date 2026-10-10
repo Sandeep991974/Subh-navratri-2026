@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102119">
+  <meta name="description" content="Maa Durga ke aashirwad aur Navratri ke rangon se saja ek khaas utsav. Jai Mata Di!">
+  <title>Shubh Navratri | Jai Mata Di</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Hind:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="sparkle-field" aria-hidden="true" id="sparkles"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Shubh Navratri, home">
+      <span class="brand-mark" aria-hidden="true">✺</span>
+      <span class="brand-copy"><span>SHUBH <em>NAVRATRI</em></span><small>2026 · JAI MATA DI</small></span>
+    </a>
+    <nav aria-label="Mukhya navigation">
+      <a class="nav-link" href="#utsav">Utsav</a>
+      <a class="nav-link" href="#navratri">Navdurga</a>
+    </nav>
+    <button class="voice-toggle" id="voiceToggle" aria-pressed="false" aria-label="Please click to hear the greeting">
+      <svg class="voice-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+        <path d="M11 5 6 9H3v6h3l5 4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+      <span id="voiceLabel">Please click</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> SHAKTI KA PARV · BHAKTI KA UTSAV</div>
+        <p class="hero-mantra">॥ जय माता दी ॥</p>
+        <h1>Maa Durga ke<br><span class="gradient-text">aashirwad ke saath.</span></h1>
+        <p class="hero-lede">Maa Durga ke aashirwad se aapka ghar bhakti aur khushhaali se mehke, aur Navratri ka har din apke ghar par khushiyan lekar aaye.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#navratri">Navratri darshan <span aria-hidden="true">↓</span></a>
+          <button class="button button-ghost hero-voice-toggle" id="heroVoiceToggle" type="button" aria-pressed="false" aria-label="Please click to hear the greeting">
+            <svg class="voice-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path d="M11 5 6 9H3v6h3l5 4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+            <span class="hero-voice-label">Please click</span>
+          </button>
+        </div>
+        <div class="hero-note"><span class="live-dot"></span> PREM AUR SHRADDHA SE SAJA · JAI MATA DI</div>
+      </div>
+
+      <div class="hero-art" aria-label="Maa Durga aur garba ke saath 2026 Navratri artwork">
+        <div class="artwork-wrap">
+          <img class="navratri-artwork" src="assets/navratri-artwork.png" alt="Maa Durga sher par virajmaan hain aur log rang-birange kapdon mein garba kar rahe hain. Happy Navratri 2026.">
+          <span class="artwork-year" aria-label="2026">2026</span>
+        </div>
+        <div class="frame-aura" aria-hidden="true"></div>
+        <div class="deity-frame">
+          <div class="frame-top-ornament" aria-hidden="true">✺</div>
+          <svg class="durga-art" viewBox="0 0 420 540" role="img" aria-labelledby="durgaTitle durgaDesc" xmlns="http://www.w3.org/2000/svg">
+            <title id="durgaTitle">Maa Durga ka divya chitra</title>
+            <desc id="durgaDesc">Sunehre prabhamandal, mukut, kamal aur trishul ke saath Maa Durga ka bhakti-bhav se bana kalatmak chitra.</desc>
+            <defs>
+              <radialGradient id="backdrop" cx="50%" cy="35%" r="70%">
+                <stop offset="0" stop-color="#9e3c3c"/>
+                <stop offset=".56" stop-color="#4c1729"/>
+                <stop offset="1" stop-color="#210e20"/>
+              </radialGradient>
+              <radialGradient id="halo">
+                <stop offset="0" stop-color="#ffeab1" stop-opacity=".18"/>
+                <stop offset=".76" stop-color="#ffd37a" stop-opacity=".12"/>
+                <stop offset="1" stop-color="#ffd37a" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+                <stop stop-color="#fff1b5"/>
+                <stop offset=".45" stop-color="#e5a944"/>
+                <stop offset="1" stop-color="#fff0b0"/>
+              </linearGradient>
+              <linearGradient id="sari" x1="0" x2="1" y1="0" y2="1">
+                <stop stop-color="#ff8795"/>
+                <stop offset=".48" stop-color="#c82e55"/>
+                <stop offset="1" stop-color="#70152e"/>
+              </linearGradient>
+              <linearGradient id="skin" x1="0" x2="1" y1="0" y2="1">
+                <stop stop-color="#ffe0b2"/>
+                <stop offset="1" stop-color="#d88a68"/>
+              </linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <path fill="url(#backdrop)" d="M0 0h420v540H0z"/>
+            <circle cx="210" cy="225" r="178" fill="url(#halo)"/>
+            <circle cx="210" cy="214" r="140" fill="none" stroke="url(#gold)" stroke-opacity=".72" stroke-width="2"/>
+            <circle cx="210" cy="214" r="129" fill="none" stroke="#ffe5a0" stroke-opacity=".46" stroke-dasharray="2 8"/>
+            <g fill="url(#gold)" opacity=".92">
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(30 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(60 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(90 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(120 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(150 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(180 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(210 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(240 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(270 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(300 210 214)"/>
+              <path d="M210 49c-10 21-10 35 0 47 10-12 10-26 0-47z" transform="rotate(330 210 214)"/>
+            </g>
+            <g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-width="5">
+              <path d="M178 287 94 158l-19-44M169 276 61 213l-33-41M166 295 64 290l-39-22"/>
+              <path d="m242 287 84-129 19-44m-26 162 108-63 33-41m-102 132 102-5 39-22"/>
+            </g>
+            <g fill="#ffd98b" stroke="#8a3e32" stroke-width="2">
+              <circle cx="75" cy="112" r="9"/><path d="m29 166-4-19 16 11z"/>
+              <circle cx="28" cy="172" r="9"/><path d="m24 266-12-16 19 4z"/>
+              <circle cx="25" cy="267" r="9"/><path d="m345 112 4-19-16 11z"/>
+              <circle cx="345" cy="112" r="9"/><path d="m391 166 4-19-16 11z"/>
+              <circle cx="392" cy="172" r="9"/><path d="m395 266 12-16-19 4z"/>
+              <circle cx="395" cy="267" r="9"/>
+            </g>
+            <g filter="url(#glow)" stroke="url(#gold)" stroke-width="4" fill="none" stroke-linecap="round">
+              <path d="M355 300V110m-17 19 17-24 17 24m-17-24V88"/>
+              <path d="M347 88q8-17 16 0m-8-15v16"/>
+            </g>
+            <path d="M155 193q-2-89 55-121 57 32 55 121l-19 65h-72z" fill="#311522" stroke="url(#gold)" stroke-width="4"/>
+            <path d="m168 146 42-61 42 61-16 6h-52z" fill="url(#gold)" stroke="#fff0b5" stroke-width="2"/>
+            <path d="m180 143 30-43 30 43z" fill="#b92c49" stroke="#ffe3a0" stroke-width="2"/>
+            <circle cx="210" cy="123" r="7" fill="#ffeab0"/>
+            <path d="M167 176q0-43 43-43t43 43v60q0 48-43 55-43-7-43-55z" fill="url(#skin)" stroke="url(#gold)" stroke-width="3"/>
+            <path d="M174 190q13-12 25 0-12 10-25 0m22 0q13-12 25 0-12 10-25 0" fill="#fff5e9"/>
+            <circle cx="187" cy="190" r="4" fill="#381525"/><circle cx="209" cy="190" r="4" fill="#381525"/>
+            <path d="M191 217q9 8 18 0" fill="none" stroke="#8f3542" stroke-width="3" stroke-linecap="round"/>
+            <path d="M205 174q5-13 10 0v13h-10z" fill="#c52e4b"/>
+            <circle cx="210" cy="175" r="4" fill="#ffe7a0"/>
+            <path d="M176 228q34 20 68 0l-7 30q-27 24-54 0z" fill="none" stroke="url(#gold)" stroke-width="3"/>
+            <path d="M154 278q56-30 112 0l50 178H104z" fill="url(#sari)" stroke="url(#gold)" stroke-width="3"/>
+            <path d="m154 278 56 55 56-55m-56 55v122m-64-110 31 109m120-109-31 109" fill="none" stroke="#ffdb91" stroke-opacity=".82" stroke-width="3"/>
+            <path d="M110 450q100 38 200 0v39H110z" fill="#e5a944"/>
+            <g fill="#ffde93">
+              <circle cx="151" cy="305" r="5"/><circle cx="269" cy="305" r="5"/>
+              <circle cx="179" cy="354" r="4"/><circle cx="241" cy="354" r="4"/>
+              <circle cx="210" cy="390" r="6"/><circle cx="210" cy="444" r="5"/>
+            </g>
+            <path d="M164 291q46 42 92 0M167 305q43 37 86 0" fill="none" stroke="url(#gold)" stroke-width="3"/>
+            <path d="M179 484q31-35 62 0-31 29-62 0z" fill="#ffe4a4" stroke="url(#gold)" stroke-width="3"/>
+            <path d="M210 462v40m-19-19h38m-33-14 28 28m0-28-28 28" stroke="#a52b4a" stroke-width="2"/>
+            <g fill="#ffe9ad" opacity=".9">
+              <path d="m66 80 3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+              <path d="m351 348 3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+              <circle cx="102" cy="329" r="3"/><circle cx="317" cy="76" r="3"/>
+            </g>
+            <path d="M0 505q105-31 210 0t210 0v35H0z" fill="#170d19"/>
+            <path d="M125 516q85-17 170 0" fill="none" stroke="url(#gold)" stroke-width="2"/>
+          </svg>
+          <div class="frame-caption"><span>श्री दुर्गा माता</span><small>सर्वमङ्गलमाङ्गल्ये</small></div>
+        </div>
+        <div class="floating-chip chip-top"><span aria-hidden="true">✦</span> माँ दुर्गा की कृपा</div>
+        <div class="floating-chip chip-bottom"><span aria-hidden="true">🪔</span> शुभ नवरात्रि</div>
+        <span class="art-star star-a" aria-hidden="true">✧</span><span class="art-star star-b" aria-hidden="true">✦</span><span class="art-star star-c" aria-hidden="true">✧</span>
+      </div>
+      <a class="scroll-cue" href="#utsav"><span></span> AAGE DEKHIYE</a>
+    </section>
+
+    <section class="ticker" aria-label="Navratri ke mangalmay sandesh"><div class="ticker-track">
+      <span>✦ जय माता दी</span><b>✺</b><span>शुभ नवरात्रि</span><b>✺</b><span>जय अम्बे गौरी</span><b>✺</b><span>भक्ति • शक्ति • उत्सव</span><b>✺</b>
+      <span>✦ जय माता दी</span><b>✺</b><span>शुभ नवरात्रि</span><b>✺</b><span>जय अम्बे गौरी</span><b>✺</b><span>भक्ति • शक्ति • उत्सव</span><b>✺</b>
+    </div></section>
+
+    <section class="celebrate section-wrap" id="utsav">
+      <div class="section-heading">
+        <div class="eyebrow"><span class="eyebrow-line"></span> NAVRATRI KA RANG · BHAKTI KE SANG <span class="eyebrow-line"></span></div>
+        <h2>Bhakti se bharein.<br><span class="gradient-text">Garba mein jhoomein.</span></h2>
+        <p>Maa Durga ke aashirwad se lekar garba ki raunak tak—Navratri ka har pal apno ke saath aur bhi khaas ban jaata hai.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card card-devotion">
+          <div class="feature-card-top"><span class="card-number">01 <span>/</span> SHAKTI</span></div>
+          <h3>Maa ka aashirwad</h3>
+          <p>Maa Durga aapke parivaar ko sahas, sukh aur shanti se bhar dein.</p>
+        </article>
+        <article class="feature-card card-garba">
+          <div class="feature-card-top"><span class="card-number">02 <span>/</span> UTSAV</span></div>
+          <h3>Garba ki raunak</h3>
+          <p>Dhol ki thaap aur dandiya ki khanak par har raat ko yaadgaar banaayein.</p>
+        </article>
+        <article class="feature-card card-together">
+          <div class="feature-card-top"><span class="card-number">03 <span>/</span> APNAPAN</span></div>
+          <h3>Khushiyan saath baantein</h3>
+          <p>Apno ke saath hansi, pyaar aur Navratri ki khoobsurat yaadein baantein.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="nights-section" id="navratri">
+      <div class="section-wrap nights-layout">
+        <div class="nights-intro">
+          <div class="eyebrow">NAVGRAH NAHI, NAVDURGA KA UTSAV</div>
+          <h2>Nau roop.<br><span class="gradient-text">Ek hi shakti.</span></h2>
+          <p>Navratri ki har raat Maa ke ek divya swaroop ko samarpit hai. Kisi bhi raat ko chuniye aur uska sandesh jaaniye.</p>
+          <div class="night-detail" id="nightDetail" aria-live="polite">
+            <div class="detail-kicker" id="detailKicker">पहली रात · प्रतिपदा</div><h3 id="detailTitle">माँ शैलपुत्री</h3><p id="detailText">Nayi shuruaat ke liye apne andar ki shakti aur sthirta ko jagayein.</p><div class="detail-blessing"><span aria-hidden="true">✦</span> <span id="detailBlessing">आपकी हर नई शुरुआत मंगलमय हो।</span></div>
+          </div>
+        </div>
+        <div class="night-picker" id="nightPicker" aria-label="Navratri ki raat chuniye">
+          <button class="night-tile active" data-night="0" aria-pressed="true"><span class="night-number">01</span><span class="night-symbol" aria-hidden="true">🌺</span><span class="night-name">शैलपुत्री</span><span class="night-color color-one"></span></button>
+          <button class="night-tile" data-night="1" aria-pressed="false"><span class="night-number">02</span><span class="night-symbol" aria-hidden="true">🪷</span><span class="night-name">ब्रह्मचारिणी</span><span class="night-color color-two"></span></button>
+          <button class="night-tile" data-night="2" aria-pressed="false"><span class="night-number">03</span><span class="night-symbol" aria-hidden="true">🌙</span><span class="night-name">चंद्रघंटा</span><span class="night-color color-three"></span></button>
+          <button class="night-tile" data-night="3" aria-pressed="false"><span class="night-number">04</span><span class="night-symbol" aria-hidden="true">🌼</span><span class="night-name">कूष्मांडा</span><span class="night-color color-four"></span></button>
+          <button class="night-tile" data-night="4" aria-pressed="false"><span class="night-number">05</span><span class="night-symbol" aria-hidden="true">🌿</span><span class="night-name">स्कंदमाता</span><span class="night-color color-five"></span></button>
+          <button class="night-tile" data-night="5" aria-pressed="false"><span class="night-number">06</span><span class="night-symbol" aria-hidden="true">🔥</span><span class="night-name">कात्यायनी</span><span class="night-color color-six"></span></button>
+          <button class="night-tile" data-night="6" aria-pressed="false"><span class="night-number">07</span><span class="night-symbol" aria-hidden="true">🌌</span><span class="night-name">कालरात्रि</span><span class="night-color color-seven"></span></button>
+          <button class="night-tile" data-night="7" aria-pressed="false"><span class="night-number">08</span><span class="night-symbol" aria-hidden="true">✨</span><span class="night-name">महागौरी</span><span class="night-color color-eight"></span></button>
+          <button class="night-tile" data-night="8" aria-pressed="false"><span class="night-number">09</span><span class="night-symbol" aria-hidden="true">💗</span><span class="night-name">सिद्धिदात्री</span><span class="night-color color-nine"></span></button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">✺</span><span class="brand-copy"><span>SHUBH <em>NAVRATRI</em></span><small>2026 · JAI MATA DI</small></span></a>
+    <p>Maa Durga ka aashirwad sada aapke saath rahe. <strong>जय माता दी 🙏</strong></p>
+    <a class="back-top" href="#home">WAAPAS UPPER ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
